@@ -1,0 +1,44 @@
+import turtle
+import colorsys
+
+screen= turtle.getscreen() # Create a screen object
+screen.bgcolor("Lavender") # Set the background color of the screen
+screen.setup(width= 800, height=600) # Set screen size
+screen.title("La code Art by Adiam")  #Set screen Title
+
+
+
+adiam = turtle.Turtle() # Turtle shape and  creating instance of turtle 
+turtle.bgcolor('black')
+colors = ['red','dark red']
+
+adiam.hideturtle()
+
+for number in range(400):
+    adiam.forward(number+1)
+    adiam.right(89)
+    adiam.pencolor(colors[number%2])
+    adiam.speed(100)
+
+
+adiam.penup()
+adiam.home()
+adiam.pendown()
+adiam.speed(20)
+colors_2 = ['black','white']
+for number in range(400):
+    adiam.forward(number+1)
+    adiam.left(89)
+    adiam.pencolor(colors_2[number%2])
+
+adiam.penup()
+adiam.home()
+adiam.pendown()
+fill_color = "black"
+adiam.begin_fill()
+for number in range(400):
+    adiam.forward(number+1)
+    adiam.right(89)
+adiam.end_fill()
+
+screen.exitonclick ( ) 
