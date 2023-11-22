@@ -1,0 +1,50 @@
+Weather Alert Script
+This Python script retrieves current weather data using the OpenWeatherMap API and sends an alert message using Twilio
+if the wind speed is above a certain threshold.
+
+Prerequisites
+Python 3.x
+Twilio account and credentials (API key, account SID, auth token)
+OpenWeatherMap API key
+Installation
+Clone the repository:
+
+bash
+Copy code
+git clone https://github.com/yourusername/WeatherAlert.git
+cd WeatherAlert
+Install dependencies:
+
+bash
+Copy code
+pip install requests twilio
+Create a .env file in the project directory and add your environment variables:
+
+dotenv
+Copy code
+API_KEY=your_openweathermap_api_key
+ACCOUNT_SID=your_twilio_account_sid
+AUTH_TOKEN=your_twilio_auth_token
+Run the script:
+
+bash
+Copy code
+python main.py
+Configuration
+Edit the script (main.py) to customize the location (MY_LAT, MY_LNG), OpenWeatherMap API parameters, and the Twilio message content.
+
+Usage
+Execute the script to check the current weather conditions and receive a Twilio alert if the wind speed exceeds the specified threshold.
+
+bash
+Copy code
+python main.py
+Contributing
+Feel free to contribute by opening issues, submitting pull requests, or suggesting improvements.
+
+Replace the placeholder URLs, credentials, and other details with your actual information.
+
+
+
+
+
