@@ -10,10 +10,6 @@ import smtplib
 import datetime as dt
 import random
 
-smtp_server = "smtp.gmail.com"
-my_email = "adiamburhan@gmail.com"
-password = "sgqifojkfppdoucv"
-smtp_port = 587
 
 today = dt.datetime.now()
 
