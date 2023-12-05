@@ -1,0 +1,47 @@
+Exercise Tracker using Nutritionix API and Google Sheets
+This script is designed to track your exercises by utilizing the Nutritionix API to retrieve exercise details and then storing the information in a Google Sheets document.
+
+Prerequisites
+Before using this script, make sure you have the following:
+
+Python installed on your machine.
+The requests library installed. You can install it using the following command:
+API credentials and endpoint information from Nutritionix and Google Sheets.
+Setup
+Clone or download this repository to your local machine.
+
+Create a file named config.py in the same directory as the script, and include the following information:
+
+
+
+APP_ID = "your_nutritionix_app_id"
+API_KEY = "your_nutritionix_api_key"
+AUTHORIZATION = "your_google_sheets_authorization"
+SHEET_ENDPOINT = "your_google_sheets_endpoint"
+GENDER = "your_gender"
+WEIGHT_KG = "your_weight_in_kg"
+HEIGHT_CM = "your_height_in_cm"
+AGE = "your_age"
+Replace the placeholder values with your actual credentials and information.
+
+Run the script:
+
+bash
+python your_script_name.py
+Enter the exercise you did today when prompted.
+
+How It Works
+The script sends a request to the Nutritionix API to get details about the specified exercise.
+
+If the request is successful (HTTP status code 200), the exercise details are extracted, and a new request is made to add the exercise information to a Google Sheets document.
+
+The Google Sheets request also includes additional information such as date, time, and user details.
+
+If both requests are successful, the script prints a success message. Otherwise, it prints an error message along with the status code and response text.
+
+Note
+Ensure that you have a stable internet connection for the script to communicate with the Nutritionix API and Google Sheets.
+
+Keep your API credentials and sensitive information secure. Do not share them publicly.
+
+This script serves as a basic template and can be expanded or modified based on your specific requirements.
